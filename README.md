@@ -1,6 +1,6 @@
 📊 AI Data Agent Assignment
 
-This project demonstrates a simple AI-powered Data Agent with a FastAPI backend and a React + Vite + Tailwind + Recharts frontend.
+I built a simple AI-powered Data Agent with a FastAPI backend and a React + Vite + Tailwind + Recharts frontend.
 
 It allows users to ask natural language questions about sales data, which are automatically converted into SQL queries, executed on a SQLite database, and visualized with tables and charts.
 
