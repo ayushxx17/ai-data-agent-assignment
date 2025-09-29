@@ -5,29 +5,27 @@ This project demonstrates a simple AI-powered Data Agent with a FastAPI backend 
 It allows users to ask natural language questions about sales data, which are automatically converted into SQL queries, executed on a SQLite database, and visualized with tables and charts.
 
 🚀 Features
+🔹 Backend (FastAPI)
 
--->Backend (FastAPI)
+.📥 Loads and cleans CSV data into SQLite
 
-.Loads and cleans CSV data into SQLite.
+.🌐 Exposes an /api/ask endpoint that takes natural language queries
 
-.Exposes an /api/ask endpoint that takes natural language queries.
+.📊 Returns SQL, summary, rows, and chart metadata
 
-.Returns SQL, summary, rows, and chart metadata.
+.📖 Interactive API docs available at /docs (Swagger UI)
 
-.Swagger UI available at /docs.
+🔹 Frontend (React + Vite)
 
--->Frontend (React + Vite)
+.🖊️ User-friendly interface to type queries
 
-.User-friendly interface to type queries.
+.📈 Displays summary, SQL, chart (bar / line / pie) and results table
 
-.Displays summary, SQL, chart (bar/line/pie), and results table.
+.💾 Supports download to CSV and copy SQL to clipboard
 
-.Supports download to CSV and copy SQL to clipboard.
-
-.Styled with TailwindCSS and powered by Recharts.
+.🎨 Styled with TailwindCSS and powered by Recharts
 
 📂 Project Structure
-
 ai-data-agent-assignment/
 ├── ai-data-agent        # Backend (Python, FastAPI)
 │   ├── backend          # FastAPI app
@@ -36,11 +34,8 @@ ai-data-agent-assignment/
 │
 └── frontend             # Frontend (React, Vite, Tailwind, Recharts)
 
-
 ⚡️ Setup & Run
-
 🔹 Backend (FastAPI)
-
 cd ai-data-agent
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -53,12 +48,12 @@ uvicorn backend.app:app --reload --port 8000
 
 👉 Swagger UI: http://127.0.0.1:8000/docs
 
-
 🔹 Frontend (React + Vite)
-
 cd frontend
 npm install
 npm run dev
+
+
 👉 Runs at: http://localhost:5173
 
 ✅ Example Queries
@@ -73,12 +68,107 @@ npm run dev
 
 📌 Notes
 
-.Default database file: data.db (created in project root).
+.🗄️ Default database file: data.db (created in project root)
 
-.CORS enabled for http://localhost:5173 so frontend can talk to backend.
+.🔐 CORS enabled for http://localhost:5173 so frontend can talk to backend
 
-.Works with SQLite out of the box, can be adapted to Postgres/MySQL easily.
+.🛠️ Works with SQLite out of the box, can be adapted to Postgres/MySQL
 
 👨‍💻 Author
+
 Ayush Kumar Singh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
